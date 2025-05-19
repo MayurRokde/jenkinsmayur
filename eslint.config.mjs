@@ -18,7 +18,8 @@ export default [
       '@stylistic/js/indent': ['error', 2, { 'SwitchCase': 1, 'MemberExpression': 'off' }],
       'mocha/no-exclusive-tests': 'error',
       'mocha/no-skipped-tests': 'error',
-      'mocha/no-mocha-arrows': 'off'
+      'mocha/no-mocha-arrows': 'off',
+      'cypress/unsafe-to-chain-command': 'off'
     },
     languageOptions: {
       globals: {

@@ -1,0 +1,36 @@
+
+{
+  "auth": {
+    "username": "mayurrokde_ivS8oI",
+    "access_key": "VuhVKSii7EyHEEBcKxyk"
+  },
+  "browsers": [{
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["latest", "latest - 1"]
+    },
+    {
+      "browser": "firefox",
+      "os": "OS X Mojave",
+      "versions": ["latest", "latest - 1"]
+    },
+    {
+      "browser": "edge",
+      "os": "OS X Catalina",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js",
+    "cypress_version": "13.latest",
+    "network_logs": true,
+    "npm_dependencies": {
+      "chai": "4.3.4",
+      "lodash": "4.17.21"
+    },
+    "project_name": "Automate Assignment Mayur",
+    "build_name": "Build Automate Cypress BS",
+    "parallels": 5,
+    "exclude": ["some-folder/test.js", "static/*.pdf"]
+  }
+}
