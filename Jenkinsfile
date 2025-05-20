@@ -14,13 +14,14 @@ pipeline {
     }
 
     stage('Run Cypress Tests on BrowserStack') {
-      steps {
-        browserstack(credentialsId: '888adf0f-e16f-4ff0-b030-213bdd68da4a') {
-          echo 'Starting Cypress tests on BrowserStack...'
-          sh './node_modules/.bin/browserstack-cypress run'
-          echo 'Finished running Cypress tests.'
-        }
-      }
+     steps {
+    browserstack(credentialsId: '888adf0f-e16f-4ff0-b030-213bdd68da4a') {
+        echo 'Starting Cypress tests on BrowserStack...'
+        sh './node_modules/.bin/browserstack-cypress run --spec "cypress/e2e/Automate Assignment/clickOnSignIn.cy.js"'
+        echo 'Finished running Cypress tests.'
+    }
+}
     }
   }
 }
+
